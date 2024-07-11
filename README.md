@@ -19,11 +19,15 @@ You need Python 3 installed.  The script will make subfolders the game requires.
 
 # NOTES
 Make sure you have 8 answers for EVERY poll.
+
 Make sure you have at least one poll for EVERY round.
+
 Want to make it personal? You can change the poll choices in the .jet to a single entry (or look at the stock files for more options with) called "{{PLAYERS}}".  This will fill out whatever empty spaces with randomly selected player names.  
+
 There are some fields I don't touch that the main .jet occasionally uses.  One such one is you can put a few conditions in the isValid field, such as numPlayers >= 6 to make the prompt only appear when the number of players matches.
 
 
 # FUTURE PLANS AND TO-DO
 I want to make this an application for easier editing.  Also, I want to mod the script so it doesn't make a generic data.jet for everything, just so I can add subtitles for the question.ogg audio... though it seems pointless to have subtitles if the question's right there on screen...
+
 In the data.jet for each question are also introAudio and outroAudio fields. If you look at the stock stuff you may find what you need to set these if you wish. It merely plays another .ogg before and/or after question.ogg, typically Laverne would have a joke related to the prompt for it. You'll have to edit the data.jet AND the SurveyBombQuestions.jet file for that, though.
