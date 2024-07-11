@@ -14,7 +14,7 @@ You need Python 3 installed.  The script will make subfolders the game requires.
 5. Next is shortQuestionText, which is what's above the doors during the game while you're choosing as a team.
 6. Lastly there'll be 8 choices, that you must have an entry for each in.
 7. Once you entered the last choice, the window will close and generate a folder for the poll ID as well as a content.jet.  Generate a question.ogg, either a silent audio file, a placeholder file, cut Laverne's voice into something for it, use TTS/ML voices...whatever. Needs to be there or the game will softlock.
-8. Copy the generated folder(s) to [Poll Mine folder]/SurveyBombQuestions, and copy the content from content.jet to SurveyBombQuestions.jet. You can delete whatever out of there if you wish, or make an empty file using them as a structure and back them up like I do.
+8. Copy the generated folder(s) to [Poll Mine folder]/SurveyBombQuestions, and copy the content from content.jet to SurveyBombQuestions.jet. You can delete whatever out of there if you wish, or make an empty file using them as a structure and back them up like I do. Ensure to not copy the very last comma from the content.jet file, as any trailing commas will make the application think there's still data to read, unless there is still a poll entry after it.
 9. Run Poll Mine. It should now select from the polls you added.
 
 # NOTES
